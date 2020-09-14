@@ -1,24 +1,42 @@
 import React from 'react';
-import './App.css';
+
+import { Home, About, Contact, Projects } from './pages';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+
+import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="demo-big-content">
+      <Layout>
+          <Header title="Title" scroll>
+              <Navigation>
+                  <Link to="">Главная</Link>
+                  <Link to="about">Обо мне</Link>
+                  <Link to="projects">Работы</Link>
+                  <Link to="contact">Контакты</Link>
+              </Navigation>
+          </Header>
+          <Drawer title="Title">
+              <Navigation>
+                  <Link to="">Главная</Link>
+                  <Link to="about">Обо мне</Link>
+                  <Link to="projects">Работы</Link>
+                  <Link to="contact">Контакты</Link>
+              </Navigation>
+          </Drawer>
+          <Content>
+              <div className="page-content" />
+              <Route path="/" component={Home} exact />
+              <Route path="/about" component={About} exact />
+              <Route path="/projects" component={Projects} exact />
+              <Route path="/contact" component={Contact} exact />
+          </Content>
+      </Layout>
     </div>
+
+
   );
 }
 
