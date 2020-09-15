@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-          <Header title="Title" scroll>
+          <Header className="header-color" title="LOgO" scroll>
               <Navigation>
                   <Link to="">Главная</Link>
                   <Link to="about">Обо мне</Link>
