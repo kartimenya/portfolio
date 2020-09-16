@@ -1,13 +1,12 @@
 import React from 'react';
 import {Skill} from '.././components';
+import avatar from '../assets/img/avatar.png';
 
 function About() {
   return (
     <div className="about">
       <div className="about__left">
-        <img
-          className=""
-          src="https://lh3.googleusercontent.com/proxy/Wwm67T0UrKuSzJs4BKbbrS3wX687gGsnQKpBG2MOZ-ykvtui5zMVyEw02L5onmdxGy20iVI9buARV824TtTGetW7dyfo2Zd0ZppZtSeWG8HWp3RIZoICVA" alt=""/>
+        <img src={avatar} alt=""/>
         <h2 className="about__left-name">Артименя Кмрилл</h2>
         <p className="about__left-info">Возрост: 21 год</p>
         <p className="about__left-info">Место жительства : Минск</p>
@@ -29,6 +28,10 @@ function About() {
            skillName={"React"}
            skillInfo={"На хорошем уровне знаю React. Умею работать с Hooks и Lifecycle methods, использовать  React-router. Могу работать с Redux (знаю что такое actions, redusers, store)."}
            />
+           <Skill
+              skillName={"Прочие навыки"}
+              skillInfo={"Умею работать с системой контроля версий git. Испульзую в свих работах Gulp"}
+              />
       </div>
     </div>
   );
