@@ -1,4 +1,5 @@
 import React from 'react';
+import src from '../assets/img/project-1.jpg';
 
 function Card({link, src}) {
 

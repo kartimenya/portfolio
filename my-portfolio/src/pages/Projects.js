@@ -1,18 +1,18 @@
 import React from 'react';
 import {Card} from '../components';
-import src from '../assets/img/project-1.jpg';
+
+// import src from '../assets/img/project-1.jpg';
+import progectArr from '../filling/projects'
 
 function Projects() {
+
   return (
     <div>
       <h2 className="projects__title">Мои работы</h2>
       <div className="card-list">
-          <Card link={'#'} src={src}/>
-          <Card link={'#'} src={src}/>
-          <Card link={'#'} src={src}/>
-          <Card link={'#'} src={src}/>
-          <Card link={'#'} src={src}/>
-          <Card link={'#'} src={src}/>
+          {progectArr.map(item => (
+            <Card key={item.id} link={item.href} src={item.src}/>
+          ))}
       </div>
     </div>
   );
