@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="demo-big-content">
       <Layout>
-          <Header className="header-color" title="LOgO" scroll>
+          <Header className="header-color" title="MyPortfolio" scroll>
               <Navigation>
                   <Link to="">Главная</Link>
                   <Link to="about">Обо мне</Link>
@@ -18,7 +18,7 @@ function App() {
                   <Link to="contact">Контакты</Link>
               </Navigation>
           </Header>
-          <Drawer title="Title">
+          <Drawer title="MyPortfolio">
               <Navigation>
                   <Link to="">Главная</Link>
                   <Link to="about">Обо мне</Link>

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Card} from '../components';
 
-// import src from '../assets/img/project-1.jpg';
 import progectArr from '../filling/projects'
 
 function Projects() {
